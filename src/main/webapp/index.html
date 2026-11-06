@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="es" dir="ltr">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aula Virtual - Lección Multimedia</title>
+</head>
+<body>
+
+	<main>
+		<article>
+			<header>
+				<h1>Unidad 3: Reproductores y Medios Adaptativos</h1>
+			</header>
+
+			<section class="video-section">
+				<h2>Videoclase Interactiva</h2>
+
+				<figure class="video-figure">
+					<video controls width="1120" height="630" preload="metadata">
+						<source src="clase.mp4" type="video/mp4">
+						<track src="subtitulosPractica.vtt" kind="subtitles" srclang="es"
+							label="Español">
+					</video>
+					<figcaption>
+						<strong>Vídeo 3.1:</strong> Lección sobre reproductores nativos y
+						subtítulos en HTML5.
+					</figcaption>
+				</figure>
+			</section>
+
+
+			<section class="image-section">
+				<h2>Esquema de Arquitectura Web</h2>
+				<!-- El alumnado debe envolver en <figure>/<figcaption> y sustituir por <picture> con AVIF/WebP y srcset -->
+				<figure class="picture-figure">
+					<!-- 				<img src="esquema-desktop.jpg" alt="Esquema de red"> -->
+					<picture>
+					<source media="(min-width: 900px)" srcset="esquema.avif"
+						type="image/avif">
+					<source media="(min-width: 900px)" srcset="esquema.webp"
+						type="image/webp">
+
+					<img src="esquema.jpg"
+						alt="Esquema conceptual de la arquitectura de red cliente-servidor"
+						width="1000" loading="lazy"> </picture>
+
+					<figcaption>
+						<strong>Figura 3.2:</strong> Representación gráfica de la
+						arquitectura de red.
+					</figcaption>
+				</figure>
+			</section>
+		</article>
+	</main>
+
+	<footer>
+		<p>Hola</p>
+	</footer>
+
+</body>
+</html>
