@@ -17,8 +17,9 @@
 				<h2>Videoclase Interactiva</h2>
 
 				<figure class="video-figure">
-					<video controls width="1120" height="630" preload="metadata">
-						<source src="clase.mp4" type="video/mp4">
+					<video controls width="1120" height="630" preload="metadata"
+						poster=img/poster-video.jpg>
+						<source src="clase.mp4" type="video/mp4" loading="lazy">
 						<track src="subtitulosPractica.vtt" kind="subtitles" srclang="es"
 							label="Español">
 					</video>
@@ -37,9 +38,9 @@
 					<!-- 				<img src="esquema-desktop.jpg" alt="Esquema de red"> -->
 					<picture>
 					<source media="(min-width: 900px)" srcset="esquema.avif"
-						type="image/avif">
+						type="image/avif" loading="lazy">
 					<source media="(min-width: 900px)" srcset="esquema.webp"
-						type="image/webp">
+						type="image/webp" loading="lazy">
 
 					<img src="esquema.jpg"
 						alt="Esquema conceptual de la arquitectura de red cliente-servidor"
